@@ -1,0 +1,82 @@
+:root {
+    --haeder-height: 70px;
+    --sidebar-width: 50px;
+    --sidebar-bg: rgb(5, 30, 52);
+}
+
+/* DEBUG */
+
+/* .debug [class*=col-] {
+    border: solid 1px black;
+} */
+
+/* CSS */
+
+/* Utility */
+
+.ms_hidden_lg {
+    display: none;
+}
+
+/* Header */
+
+header {
+    height: var(--haeder-height);  
+}
+
+.form-control::placeholder {
+    font-family:Arial, FontAwesome;
+    font-size: 0.8rem;
+}
+
+header .col-8 input {
+    background-color: rgb(229, 229, 229);
+}
+
+#logo-mobile {
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+/* Size SM */
+@media screen and (min-width:576px) {
+    
+}
+
+/* Size MD */
+@media screen and (min-width:768px) {
+    
+}
+
+/* Size LG */
+@media screen and (min-width:992px) {
+    .ms_hidden_lg {
+        display: block;
+        padding-left: 1rem;
+    }
+
+    #logo-mobile {
+        display: none;
+    }
+    
+}
+
+/* Size XL */
+@media screen and (min-width:1200px) {
+    
+}
+
+/* Size XXL */
+@media screen and (min-width:1400px) {
+    
+}
