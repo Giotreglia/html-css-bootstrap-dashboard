@@ -1,6 +1,6 @@
 :root {
     --haeder-height: 70px;
-    --sidebar-width: 50px;
+    --sidebar-width: 60px;
     --sidebar-bg: rgb(5, 30, 52);
 }
 
@@ -24,6 +24,14 @@ header {
     height: var(--haeder-height);  
 }
 
+.ms_navbar_col {
+    width: var(--sidebar-width);
+}
+
+.ms_navbar_col_center {
+    width: calc(100% - 2* var(--sidebar-width));
+}
+
 .form-control::placeholder {
     font-family:Arial, FontAwesome;
     font-size: 0.8rem;
@@ -35,6 +43,18 @@ header .col-8 input {
 
 #logo-mobile {
     width: 50px;
+}
+
+/* Main */
+
+.ms_maincontainer {
+    height: calc(100vh - var(--haeder-height));
+}
+
+aside {
+    width: var(--sidebar-width);
+    height: 100%;
+    background-color: var(--sidebar-bg);
 }
 
 
@@ -60,6 +80,14 @@ header .col-8 input {
 
 /* Size LG */
 @media screen and (min-width:992px) {
+
+    :root {
+        --sidebar-width: 180px;
+    }
+
+    .ms_navbar_col {
+        width: var(--sidebar-width);
+    }
     .ms_hidden_lg {
         display: block;
         padding-left: 1rem;
