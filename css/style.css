@@ -26,6 +26,7 @@ header {
 
 .ms_navbar_col {
     width: var(--sidebar-width);
+
 }
 
 .ms_navbar_col_center {
@@ -39,10 +40,6 @@ header {
 
 header .col-8 input {
     background-color: rgb(229, 229, 229);
-}
-
-#logo-mobile {
-    width: 50px;
 }
 
 /* Main */
@@ -61,6 +58,26 @@ header .col-8 input {
     background-color: var(--sidebar-bg);
 }
 
+.ms_cell_big {
+    width: 30%;
+    line-height: 2rem;
+}
+
+.ms_cell {
+    width: calc(70% / 4);
+    line-height: 2rem;
+}
+
+.ms_table {
+    display: none;
+}
+
+.ms_btn {
+    padding: 1px 3px;
+}
+
+
+
 
 
 
@@ -78,6 +95,10 @@ header .col-8 input {
 
 /* Size MD */
 @media screen and (min-width:768px) {
+
+    .ms_table {
+        display: table-cell;
+    }
     
 }
 
@@ -93,17 +114,32 @@ header .col-8 input {
     }
     .ms_hidden_lg {
         display: block;
-        padding-left: 1rem;
     }
 
     #logo-mobile {
         display: none;
+    }
+
+    .ms_cell_big {
+        width: 40%;
+    }
+    
+    .ms_cell {
+        width: 15%;
     }
     
 }
 
 /* Size XL */
 @media screen and (min-width:1200px) {
+
+    .ms_cell_big {
+        width: 50%;
+    }
+    
+    .ms_cell {
+        width: calc(50%/4);
+    }
     
 }
 
