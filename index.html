@@ -65,15 +65,15 @@
             <!-- Sidebar -->
             <div class="aside p-2">
               <div class="container-fluid h-100 py-3">
-                <div class="row d-flex flex-column justify-content-between h-100 ">
+                <div class="row d-flex flex-column justify-content-between align-items-center h-100 ">
                   <div class="container-fluid">
                     <div class="row">
-                      <div class="col-2 text-white">
+                      <div class="col col-lg-5 text-white text-end ps-0">
                         <div class="mb-3"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-house"></i></a></div>
                         <div class="mb-3"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-chart-simple"></i></a></div>
                         <div class="mb-3"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-signal"></i></a></div>
                       </div>
-                      <div class="col-3 text-white">
+                      <div class="col-lg-7 text-white text-start ps-0">
                         <div class="mb-3 ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Home</a></div>
                         <div class="mb-3 ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Stats</a></div>
                         <div class="mb-3 ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Signals</a></div>
@@ -81,9 +81,9 @@
                     </div>
                   </div>
   
-                  <div class="container-fluid">
+                  <div class="container-fluid p-2">
                     <div class="row">
-                      <div class="col">
+                      <div class="col text-center">
                         <p class="text-white m-0 p-0"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-gear me-2"></i></a><span class="ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Admin</a></span></p>
                       </div>
                     </div>
@@ -95,7 +95,111 @@
             <!-- Main -->
             <div class="ms_contentcontainer overflow-y-auto">
 
-                <div class="container-fluid bg-primary h-25">
+                <div class="container-fluid bg-primary ms_h-banner px-4 pt-0">
+                  <div class="row d-flex flex-column flex-md-row text-white">
+                    <div class="col col-md-4 col-lg-3 fs-6 fs-md-4 p-2 my-1 my-md-3 order-md-3">
+                      <span class="me-3">Nuovo Studente</span>
+                      <button class="btn text-white border rounded" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-plus"></i></button>
+
+                      <div class="offcanvas ms_w-45 offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <form class="row g-3">
+                            <div class="col-md-6">
+                              <label for="inputname" class="form-label">Nome</label>
+                              <input type="text" class="form-control" id="inputname">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputlastname" class="form-label">Cognome</label>
+                              <input type="text" class="form-control" id="inputlastname">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="autoSizingInputGroup" class="form-label">Email</label>
+                              <div class="input-group">
+                                <div class="input-group-text">@</div>
+                                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="autoSizingInputGroup" class="form-label">Indirizzo Email</label>
+                              <div class="input-group">
+                                <div class="input-group-text">@</div>
+                                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Indirizzo</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">Città</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputState" class="form-label">Stato</label>
+                              <select id="inputState" class="form-select">
+                                <option selected>Scegli</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="col-md-2">
+                              <label for="inputZip" class="form-label">CAP</label>
+                              <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Seleziona per proseguire
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Salva</button>                           
+                              <button type="reset" class="btn btn-warning">Svuota</button>  
+                            </div>
+                          </form>                        
+                        </div>
+                      </div> 
+                    </div>                       
+                    <div class="col col-md-4 col-lg-6 p-2 my-1 my-md-3 order-md-1">
+                      <div>
+                        <h2 class="d-inline-block text-white me-1">Boolean</h2>
+                        <span class="ms_badge-bg badge rounded-pill py-2 px-3">Piano Blaze</span>
+                      </div>
+                      <div class="mt-2">
+                        <span class="ms_badge-bg badge rounded-pill py-2 px-2 ms_font06">3 App</span>
+                        <span><i class="fa-solid fa-angles-right ms_lh-2 ms_font06"></i></span>
+                        <span class="ms_badge-bg badge rounded-circle py-2 px-2 ms_visible_lg"><i class="fa-solid fa-plus"></i></span>
+                        <span class="ms_badge-bg badge rounded-pill py-2 px-2 me-1 ms_hidden_lg ms_font06">Boolean mobile app</span>
+                        <span class="ms_badge-bg badge rounded-pill py-2 px-2 me-1 ms_hidden_lg ms_font06">Boolean mobile app</span>
+                        <span class="ms_badge-bg badge rounded-pill py-2 px-2 ms_hidden_lg ms_font06">Boolean mobile app</span>
+                      </div>
+                    </div>
+                    <div class="col col-md-4 col-lg-3 p-2 my-1 my-md-3 order-md-2">
+                      <div>
+                        <span class="fs-6">Studenti online negli ultimi 30 minuti</span>
+                      </div>
+                      <span class="fs-3">125</span>
+                    </div>
+
+                  </div>
 
                 </div>
 

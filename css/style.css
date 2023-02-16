@@ -1,14 +1,8 @@
 :root {
     --haeder-height: 70px;
-    --sidebar-width: 60px;
+    --sidebar-width: 50px;
     --sidebar-bg: rgb(5, 30, 52);
 }
-
-/* DEBUG */
-
-/* .debug [class*=col-] {
-    border: solid 1px black;
-} */
 
 /* CSS */
 
@@ -16,6 +10,14 @@
 
 .ms_hidden_lg {
     display: none;
+}
+
+.ms_font06 {
+    font-size: 0.6rem;
+}
+
+.ms_lh-2 {
+    line-height: 2rem;
 }
 
 /* Header */
@@ -78,6 +80,11 @@ header .col-8 input {
     padding: 1px 3px;
 }
 
+.ms_badge-bg {
+    background-color: rgb(22, 91, 186);
+}
+
+
 
 
 
@@ -101,6 +108,7 @@ header .col-8 input {
     .ms_table {
         display: table-cell;
     }
+
     
 }
 
@@ -108,7 +116,7 @@ header .col-8 input {
 @media screen and (min-width:992px) {
 
     :root {
-        --sidebar-width: 180px;
+        --sidebar-width: 140px;
     }
 
     .ms_navbar_col {
@@ -116,6 +124,10 @@ header .col-8 input {
     }
     .ms_hidden_lg {
         display: inline-block;
+    }
+
+    .ms_visible_lg {
+        display: none;
     }
 
     #logo-mobile {
@@ -128,6 +140,10 @@ header .col-8 input {
     
     .ms_cell {
         width: 15%;
+    }
+
+    .ms_w-45 {
+        width: 45% !important;
     }
 
 }
