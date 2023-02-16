@@ -60,23 +60,23 @@
 
     <!-- Main -->
     <main>
-        <div class="ms_maincontainer container-fluid p-0 d-flex">
+        <div class="ms_maincontainer p-0 d-flex">
 
             <!-- Sidebar -->
             <div class="aside p-2">
               <div class="container-fluid h-100 py-3">
-                <div class="row d-flex flex-column justify-content-between h-100">
+                <div class="row d-flex flex-column justify-content-between h-100 ">
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-2 text-white">
-                        <div class="mb-3"><i class="fa-solid fa-house"></i></div>
-                        <div class="mb-3"><i class="fa-solid fa-chart-simple"></i></div>
-                        <div class="mb-3"><i class="fa-solid fa-signal"></i></div>
+                        <div class="mb-3"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-house"></i></a></div>
+                        <div class="mb-3"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-chart-simple"></i></a></div>
+                        <div class="mb-3"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-signal"></i></a></div>
                       </div>
                       <div class="col-3 text-white">
-                        <div class="mb-3 ms_hidden_lg">Home</div>
-                        <div class="mb-3 ms_hidden_lg">Stats</div>
-                        <div class="mb-3 ms_hidden_lg">Signals</div>
+                        <div class="mb-3 ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Home</a></div>
+                        <div class="mb-3 ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Stats</a></div>
+                        <div class="mb-3 ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Signals</a></div>
                       </div>
                     </div>
                   </div>
@@ -84,7 +84,7 @@
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col">
-                        <p class="text-white m-0 p-0"><i class="fa-solid fa-gear me-2"></i><span class="ms_hidden_lg">Admin</span></p>
+                        <p class="text-white m-0 p-0"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-gear me-2"></i></a><span class="ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Admin</a></span></p>
                       </div>
                     </div>
                   </div>
@@ -93,17 +93,17 @@
             </div>
 
             <!-- Main -->
-            <div class="ms_contentcontainer overflow-y-auto p-0">
+            <div class="ms_contentcontainer overflow-y-auto">
 
                 <div class="container-fluid bg-primary h-25">
 
                 </div>
 
-                <div class="row d-flex h-100 justify-content-center">
-                    <div class="col-12 col-lg-8 p-3">
+                <div class="row d-flex h-100 justify-content-center g-0 mt-3 p-3">
+                    <div class="col-12 col-lg-8 pe-2"> <!-- pt-3 ps-3 pe-2 -->
                         <div class="card">
                             <div class="card-header">
-                              Prossime classi
+                              <h2>Prossime classi</h2>
                             </div>
                             <table class="table w-100">
                                 <tbody>
@@ -198,9 +198,9 @@
                               </table>
                         </div>
 
-                        <div class="card mt-4">
+                        <div class="card mt-3">
                             <div class="card-header">
-                              F.A.Q.
+                              <h2>F.A.Q.</h2>
                             </div>
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
@@ -243,10 +243,10 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-4 p-3">
+                    <div class="col-12 col-lg-4 ps-2"> <!-- pt-3 ps-2 pe-3 -->
                         <div class="card">
                             <div class="card-header">
-                              Todo
+                              <h2>Todo</h2>
                             </div>
                         </div>
                         <ul class="list-group">
@@ -264,7 +264,7 @@
                             </li>
                         </ul>
                           
-                        <div class="card mt-4 p-3">
+                        <div class="card mt-3 p-3">
                             <div class="card">
                                 <img class="w-100" src="img/stats.jpeg" alt="grafico">
                                 <div>
