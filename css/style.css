@@ -55,19 +55,9 @@ header .col-8 input {
 .aside {
     width: var(--sidebar-width);
     height: 100%;
-    background: var(--sidebar-bg) url("/img/sidebar-bg.png");
-    position: relative;
-}
-
-/* .aside::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    background-image: url("../img/sidebar-bg.png");
     background-color: var(--sidebar-bg);
-} */
+}
 
 .ms_cell_big {
     width: 30%;
@@ -77,6 +67,7 @@ header .col-8 input {
 .ms_cell {
     width: calc(70% / 4);
     line-height: 2rem;
+    text-align: center;
 }
 
 .ms_table {
