@@ -13,48 +13,48 @@
     
     <!-- Header -->
     <header>
-        <div class="container-fluid h-100">
-            <div class="row h-100 d-flex p-0 justify-content-between">
-                <div class="ms_navbar_col h-100 m-0 p-0">
-                    
-                        <div class="col h-100 d-flex align-items-center justify-content-center p-0">
-                            <img id="logo-mobile" class="w-100" src="img/mobile-logo.png" alt="logo boolean">
-                            <img id="logo-big" class="ms_hidden_lg" src="img/logo.svg" alt="logo boolean">
-                        </div>
-                    
-                </div>
-                <div class="ms_navbar_col_center h-100 d-flex align-items-center">
-                    <nav class="navbar w-100">
-                        <div class="container-fluid p-0">
-                          <form class="d-flex w-100" role="search">
-                            <input class="form-control" type="search" placeholder="&#xF002; Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                          </form>
-                        </div>
-                      </nav>
-                </div>
-                <div class="ms_navbar_col h-100">
-                    <div class="d-flex align-items-center h-100 justify-content-center justify-content-lg-between">
-                        <div class="ms_hidden_lg"><i class="fa-solid fa-list-ul"></i></div>
-                        <div class="ms_hidden_lg"><i class="fa-solid fa-circle-question"></i></div>
-                        <div class="ms_hidden_lg"><i class="fa-solid fa-ellipsis-vertical"></i></div>
-                        <div class="dropdown">
-                            <button class="btn text-warning fs-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-bell"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Profilo</a></li>
-                              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                              <li><a class="dropdown-item" href="#">Logout</a></li>
-                            </ul>
-                        </div>
-                    </div>
+      <div class="container-fluid h-100">
+        <div class="row h-100 d-flex p-0 justify-content-between">
 
-                </div>
+          <!-- Logo -->
+          <div class="ms_navbar_col h-100 m-0 p-0">
+                  <div class="col h-100 d-flex align-items-center justify-content-center p-0">
+                      <img id="logo-mobile" class="w-100" src="img/mobile-logo.png" alt="logo boolean">
+                      <img id="logo-big" class="ms_hidden_lg" src="img/logo.svg" alt="logo boolean">
+                  </div>  
+          </div>
 
-            </div>
+          <!-- Search bar -->
+          <div class="ms_navbar_col_center h-100 d-flex align-items-center">
+              <nav class="navbar w-100">
+                  <div class="container-fluid p-0">
+                    <form class="d-flex w-100" role="search">
+                      <input class="form-control" type="search" placeholder="&#xF002; Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                    </form>
+                  </div>
+                </nav>
+          </div>
 
+          <!-- Navbar right -->
+          <div class="ms_navbar_col h-100">
+              <div class="d-flex align-items-center h-100 justify-content-center justify-content-lg-between">
+                  <div class="ms_hidden_lg"><i class="fa-solid fa-list-ul"></i></div>
+                  <div class="ms_hidden_lg"><i class="fa-solid fa-circle-question"></i></div>
+                  <div class="ms_hidden_lg"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                  <div class="dropdown">
+                      <button class="btn text-warning fs-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-bell"></i>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
         </div>
-
+      </div>
     </header>
 
 
@@ -66,25 +66,25 @@
             <div class="aside p-2">
               <div class="container-fluid h-100 py-3">
                 <div class="row d-flex flex-column justify-content-between align-items-center h-100 ">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col col-lg-5 text-white text-end ps-0">
-                        <div class="mb-3"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-house"></i></a></div>
-                        <div class="mb-3"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-chart-simple"></i></a></div>
-                        <div class="mb-3"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-signal"></i></a></div>
-                      </div>
-                      <div class="col-lg-7 text-white text-start ps-0">
-                        <div class="mb-3 ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Home</a></div>
-                        <div class="mb-3 ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Stats</a></div>
-                        <div class="mb-3 ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Signals</a></div>
-                      </div>
+
+                  <!-- Aside top -->
+                  <div class="container-fluid p-2">
+                    <div class="col text-center">
+                      <p class="text-white m-0 py-2 hover"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-house me-2"></i></a><span class="ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Home</a></span></p>
+                    </div>
+                    <div class="col text-center">
+                      <p class="text-white m-0 py-2 hover"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-chart-simple me-2"></i></a><span class="ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Stats</a></span></p>
+                    </div>
+                    <div class="col text-center">
+                      <p class="text-white m-0 py-2 hover"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-signal me-2"></i></a><span class="ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Signal</a></span></p>
                     </div>
                   </div>
   
+                  <!-- Aside bottom -->
                   <div class="container-fluid p-2">
                     <div class="row">
                       <div class="col text-center">
-                        <p class="text-white m-0 p-0"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-gear me-2"></i></a><span class="ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Admin</a></span></p>
+                        <p class="text-white m-0 py-2 hover"><a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-gear me-2"></i></a><span class="ms_hidden_lg"><a class="text-white text-decoration-none" href="#">Admin</a></span></p>
                       </div>
                     </div>
                   </div>
@@ -101,7 +101,7 @@
                       <span class="me-3">Nuovo Studente</span>
                       <button class="btn text-white border rounded" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-plus"></i></button>
 
-                      <div class="offcanvas ms_w-45 offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                         <div class="offcanvas-header">
                           <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -181,15 +181,15 @@
                     <div class="col col-md-4 col-lg-6 p-2 my-1 my-md-3 order-md-1">
                       <div>
                         <h2 class="d-inline-block text-white me-1">Boolean</h2>
-                        <span class="ms_badge-bg badge rounded-pill py-2 px-3">Piano Blaze</span>
+                        <span class="ms_badge-bg badge layover-rounded rounded-pill py-2 px-3">Piano Blaze</span>
                       </div>
                       <div class="mt-2">
-                        <span class="ms_badge-bg badge rounded-pill py-2 px-2 ms_font06">3 App</span>
+                        <span class="ms_badge-bg badge layover-rounded rounded-pill py-2 px-2 ms_font06">3 App</span>
                         <span><i class="fa-solid fa-angles-right ms_lh-2 ms_font06"></i></span>
-                        <span class="ms_badge-bg badge rounded-circle py-2 px-2 ms_visible_lg"><i class="fa-solid fa-plus"></i></span>
-                        <span class="ms_badge-bg badge rounded-pill py-2 px-2 me-1 ms_hidden_lg ms_font06">Boolean mobile app</span>
-                        <span class="ms_badge-bg badge rounded-pill py-2 px-2 me-1 ms_hidden_lg ms_font06">Boolean mobile app</span>
-                        <span class="ms_badge-bg badge rounded-pill py-2 px-2 ms_hidden_lg ms_font06">Boolean mobile app</span>
+                        <span class="ms_badge-bg badge layover-rounded rounded-circle py-2 px-2 ms_visible_lg"><i class="fa-solid fa-plus"></i></span>
+                        <span class="ms_badge-bg badge layover-rounded rounded-pill py-2 px-2 me-1 ms_hidden_lg ms_font06">Boolean mobile app</span>
+                        <span class="ms_badge-bg badge layover-rounded rounded-pill py-2 px-2 me-1 ms_hidden_lg ms_font06">Boolean mobile app</span>
+                        <span class="ms_badge-bg badge layover-rounded rounded-pill py-2 px-2 ms_hidden_lg ms_font06">Boolean mobile app</span>
                       </div>
                     </div>
                     <div class="col col-md-4 col-lg-3 p-2 my-1 my-md-3 order-md-2">
@@ -204,21 +204,21 @@
                 </div>
 
                 <div class="row d-flex h-100 justify-content-center g-0 mt-3 p-3">
-                    <div class="col-12 col-lg-8 pe-2"> <!-- pt-3 ps-3 pe-2 -->
+                    <div class="col-12 col-lg-8 pe-2"> 
                         <div class="card">
                             <div class="card-header">
                               <h2>Prossime classi</h2>
                             </div>
                             <table class="table w-100">
                                 <tbody>
-                                  <tr class="ms_tr">
+                                  <tr>
                                     <td class="ms_cell_big">Nome</td>
                                     <td class="ms_cell ms_table">Inizio</td>
                                     <td class="ms_cell ms_table">ROI</td>
                                     <td class="ms_cell">Stato</td>
                                     <td class="ms_cell">Azioni</td>
                                   </tr>
-                                  <tr class="ms_tr">
+                                  <tr class="layover">
                                     <td class="ms_cell_big"><span class="rounded-circle bg-danger text-white p-1 me-2 me-2"><i class="fa-solid fa-code"></i></span> Classe 75</td>
                                     <td class="ms_cell ms_table">15 Feb 2021</td>
                                     <td class="ms_cell ms_table">20%</td>
@@ -228,7 +228,7 @@
                                         <button type="button" class="ms_btn btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                                     </td>
                                   </tr>
-                                  <tr>
+                                  <tr class="layover">
                                     <td class="ms_cell_big"><span class="rounded-circle bg-danger text-white p-1 me-2"><i class="fa-solid fa-code"></i></span> Classe 76</td>
                                     <td class="ms_cell ms_table">16 Feb 2021</td>
                                     <td class="ms_cell ms_table">20%</td>
@@ -238,7 +238,7 @@
                                         <button type="button" class="ms_btn btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                                     </td>
                                   </tr>
-                                  <tr>
+                                  <tr class="layover">
                                     <td class="ms_cell_big"><span class="rounded-circle bg-danger text-white p-1 me-2"><i class="fa-solid fa-code"></i></span> Classe 77</td>
                                     <td class="ms_cell ms_table">17 Feb 2021</td>
                                     <td class="ms_cell ms_table">20%</td>
@@ -248,7 +248,7 @@
                                         <button type="button" class="ms_btn btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                                     </td>
                                   </tr>
-                                  <tr>
+                                  <tr class="layover">
                                     <td class="ms_cell_big"><span class="rounded-circle bg-danger text-white p-1 me-2"><i class="fa-solid fa-code"></i></span> Classe 78</td>
                                     <td class="ms_cell ms_table">18 Feb 2021</td>
                                     <td class="ms_cell ms_table">20%</td>
@@ -258,7 +258,7 @@
                                         <button type="button" class="ms_btn btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                                     </td>
                                   </tr>
-                                  <tr>
+                                  <tr class="layover">
                                     <td class="ms_cell_big"><span class="rounded-circle bg-danger text-white p-1 me-2"><i class="fa-solid fa-code"></i></span> Classe 79</td>
                                     <td class="ms_cell ms_table">19 Feb 2021</td>
                                     <td class="ms_cell ms_table">20%</td>
@@ -268,7 +268,7 @@
                                         <button type="button" class="ms_btn btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                                     </td>
                                   </tr>
-                                  <tr>
+                                  <tr class="layover">
                                     <td class="ms_cell_big"><span class="rounded-circle bg-danger text-white p-1 me-2"><i class="fa-solid fa-code"></i></span> Classe 80</td>
                                     <td class="ms_cell ms_table">20 Feb 2021</td>
                                     <td class="ms_cell ms_table">20%</td>
@@ -278,7 +278,7 @@
                                         <button type="button" class="ms_btn btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                                     </td>
                                   </tr>
-                                  <tr>
+                                  <tr class="layover">
                                     <td class="ms_cell_big"><span class="rounded-circle bg-danger text-white p-1 me-2"><i class="fa-solid fa-code"></i></span> Classe 81</td>
                                     <td class="ms_cell ms_table">21 Feb 2021</td>
                                     <td class="ms_cell ms_table">20%</td>
@@ -288,7 +288,7 @@
                                         <button type="button" class="ms_btn btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                                     </td>
                                   </tr>
-                                  <tr>
+                                  <tr class="layover">
                                     <td class="ms_cell_big"><span class="rounded-circle bg-danger text-white p-1 me-2"><i class="fa-solid fa-code"></i></span> Classe 82</td>
                                     <td class="ms_cell ms_table">22 Feb 2021</td>
                                     <td class="ms_cell ms_table">20%</td>
