@@ -86,6 +86,10 @@ header .col-8 input {
     cursor: pointer;
 }
 
+#todo {
+    padding-top: 1rem;
+}
+
 
 /* Hover */
 
@@ -188,6 +192,11 @@ header .col-8 input {
 
     .offcanvas.offcanvas-end {
         width: 45%;
+    }
+
+    #todo {
+        padding-top: 0;
+        padding-left: 1rem;
     }
 
 }
