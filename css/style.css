@@ -78,6 +78,7 @@ header .col-8 input {
 
 .ms_btn {
     padding: 1px 3px;
+    z-index: 9999;
 }
 
 .ms_badge-bg {
@@ -124,10 +125,12 @@ header .col-8 input {
 
 .layover:hover::after {
     background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .layover-rounded:hover::after {
     background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 
